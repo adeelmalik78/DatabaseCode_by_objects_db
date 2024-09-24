@@ -91,16 +91,19 @@ Note that there is a [rootchangelog.yaml](sqlcode/rootchangelog.yaml) which serv
 Each databaseXchangelog.yaml file points to a changelog.yaml file in each object directory:
 ```yaml
 - include:
+    file: sequence/changelog.yaml
+    relativeToChangelogFile: true
+- include:
     file: tables/changelog.yaml
     relativeToChangelogFile: true
 - include:
     file: index/changelog.yaml
     relativeToChangelogFile: true
 - include:
-    file: views/changelog.yaml
+    file: functions/changelog.yaml
     relativeToChangelogFile: true
 - include:
-    file: functions/changelog.yaml
+    file: views/changelog.yaml
     relativeToChangelogFile: true
 - include:
     file: procedures/changelog.yaml
