@@ -1,16 +1,19 @@
 databaseChangeLog:
 
 - include:
+    file: sequence/changelog.yaml
+    relativeToChangelogFile: true
+- include:
     file: tables/changelog.yaml
     relativeToChangelogFile: true
 - include:
     file: index/changelog.yaml
     relativeToChangelogFile: true
 - include:
-    file: views/changelog.yaml
+    file: functions/changelog.yaml
     relativeToChangelogFile: true
 - include:
-    file: functions/changelog.yaml
+    file: views/changelog.yaml
     relativeToChangelogFile: true
 - include:
     file: procedures/changelog.yaml
