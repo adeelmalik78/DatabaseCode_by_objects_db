@@ -1,0 +1,17 @@
+databaseChangeLog:
+
+# database1 = dvdrental
+- include:
+    file: database1/database1changelog.yaml
+    relativeToChangelogFile: true
+
+# database2 = unused
+- include:
+    file: database2/database2changelog.yaml
+    relativeToChangelogFile: true
+
+# database2 = unused
+- include:
+    file: database3/database3changelog.yaml
+    relativeToChangelogFile: true
+
