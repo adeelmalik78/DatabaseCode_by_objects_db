@@ -1,5 +1,5 @@
 echo 
-echo "*** Attempt to drop postgres-dev, postgres-qa and postgres-prod containers ... may fail if these did not previously exists."
+echo "*** Attempt to drop postgres-dev, postgres-qa and postgres-prod containers ... ok to fail if these did not previously exists."
 docker rm -f postgres-dev
 docker rm -f postgres-qa
 docker rm -f postgres-prod
